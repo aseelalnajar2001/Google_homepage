@@ -1,0 +1,230 @@
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    width: 100%;
+    height: 100%;   
+}
+
+      /* Nav Menu */
+.nav-menu-mobile {
+    display: none;
+    width: 100%;
+    max-height: 50px;
+    top: 0;
+    position: fixed;
+}
+
+.nav-menu {
+    width: 100%;
+    max-height: 50px;
+    top: 0;
+    position: fixed;
+}
+.nav-menu > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 22px 24px;
+}
+.nav-menu > ul > li {
+    list-style: none;
+    padding: 0 10px;
+}
+.nav-menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.5s;
+}
+.nav-menu > ul > li > a:hover {
+    border-bottom: 2px solid black;
+}
+#right {
+    margin-left: auto;
+}
+#signin {
+    background: #4386F8;
+    padding: 6px 10px;
+    border-radius: 3px;
+    margin-left: 12px;
+}
+#signin > a {
+    color: white;
+}
+
+     /* Body */
+.center {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    margin-top: -6px 0px;
+}
+.search {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.search > input {
+    width: 550px;
+    height: 47px;
+    border-radius: 60px;
+    border: 1px solid rgb(228, 220, 220);
+}
+
+.search > .fa-search {
+    position: relative;
+    right: -40px;
+    top: 3px;
+}
+.search > .fa-microphone {
+    position: relative;
+    left: -40px;
+    top: 4px;
+}
+.button {
+    display: inline-block;
+}
+.button > a {
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
+#google-search {
+    background: #F2F2F2;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#lucky {
+    background: #F2F2F2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+    /* Footer */
+.footer {
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    position: fixed;
+}
+.footer > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 24px;
+    background: #F2F2F2;
+}
+.footer > ul > li {
+    list-style: none;
+    padding: 0 10px;
+}
+.footer > ul > li > a {
+    text-decoration: none;
+    color: black;
+    transition: all ease 0.5s;
+}
+.footer > ul > li > a:hover {
+    border-bottom: 1px solid black;
+}
+#footer-right {
+    margin-left: auto;
+}
+.footer-mobile {
+    display: none;
+}
+
+/* Media Query */
+@media (max-width: 560px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-menu-mobile {
+        display: block;
+        width: 100%;
+        max-height: 40px;
+        top: 0;
+        position: fixed;
+    }
+    .nav-menu-mobile > ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 22px 24px;
+    }
+    .nav-menu-mobile > ul > li {
+        list-style: none;
+        padding: 0 10px;
+    }
+    .nav-menu-mobile > ul > li > a {
+        text-decoration: none;
+        color: black;
+        transition: all ease 0.5s;
+    }
+    .nav-menu-mobile > ul > li > a:hover {
+        border-bottom: 1px solid black;
+    }
+    #right-mobile {
+        margin-left: auto;
+    }
+    .footer {
+        display: none;
+    }
+
+    .footer-mobile {
+        width: 100%;
+        height: 80px;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #F2F2F2;
+    }
+    
+    .footer-mobile > .top > ul > li, .footer-mobile > .bottom > ul > li {
+        list-style: none;
+        padding: 0 10px;
+    }
+    .footer-mobile > .top > ul > li > a, .footer-mobile > .bottom > ul > li > a {
+        text-decoration: none;
+        color: black;
+        transition: all ease 0.5s;
+    }
+    .footer-mobile > .top > ul > li > a:hover  {
+        border-bottom: 1px solid black;
+    }
+    .footer-mobile > .bottom > ul > li > a:hover {
+        border-bottom: 1px solid black;
+    }
+    .top > ul {
+        display: flex;
+        flex-flow: row;
+    }
+    .bottom > ul {
+        display: flex;
+        flex-flow: row;
+    }
+    .bottom > ul > li {
+        margin-right: 35px;
+    }
+    .top {
+        margin-bottom: 10px;
+    }
+    .search > .fa-search {
+        position: relative;
+        right: -20px;
+        top: 35px;
+    }
+    .search > .fa-microphone {
+        position: relative;
+        left: 515px;
+        top: -30px;
+    }
+}
